@@ -9,8 +9,9 @@ if c >=10:
     b = a - b
     a = a - b
 else:
-    c = c + 10
-    temp = a
-    a = b
-    b = temp
+    b = 5
+#    c = c + 10
+#    temp = a
+#    a = b
+#    b = temp
 
