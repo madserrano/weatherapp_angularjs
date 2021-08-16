@@ -19,6 +19,7 @@ cache:
 
 install:
   - npm install
+  - pip install --user codecov
 
 before_script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
@@ -31,3 +32,4 @@ script:
   
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
+  - codecov
