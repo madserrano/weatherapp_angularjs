@@ -20,5 +20,11 @@ cache:
 install:
   - npm install
 
-script:
+before_script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  
+script:
+   - npm run build
+  
+after_success:
+  - firebase deploy
