@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "madproject-22231",
-    "prod": "madproject-22231"
-  },
-  "targets": {}
+    "default": "team-rocket-swt"
+  }
 }
