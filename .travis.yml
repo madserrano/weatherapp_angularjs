@@ -22,14 +22,14 @@ install:
   - npm install -g codecov
 
 before_script:
+  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
   - npm install -g firebase-tools
   - npm install -g @angular/cli
   
 script:
   - ng build
-  - ng test --watch=false --browsers=ChromeHeadless
   - npm run build
   
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
-  - codecov --disable=gcov 
+  - codecov
