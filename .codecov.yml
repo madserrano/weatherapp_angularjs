@@ -1,9 +1,0 @@
-coverage:
-  status:
-    patch: no
-    changes: no
-    project:
-      default: false
-      app:
-        paths: "dist/"
-        target: 50%
