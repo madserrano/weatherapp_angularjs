@@ -14,6 +14,7 @@ cache:
     - ./node_modules
 
 install:
+  - npm install
   - npm install -g @angular/cli
   - npm install -g @angular-devkit/build-angular
   - npm install -g karma-cli
