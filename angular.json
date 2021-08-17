@@ -55,21 +55,7 @@
               "src/styles.scss"
             ],
             "scripts": []
-          },
-		  "test": {
-			  "builder": "@angular-devkit/build-angular:karma",
-			  "options": {
-				"main": "src/test.ts",
-				"polyfills": "src/polyfills.ts", "tsConfig": "src/tsconfig.spec.json",
-				"karmaConfig": "src/karma.conf.js",
-				"stylePreprocessorOptions": {
-				  "includePaths": [ "src/app/shared/styles"]
-				},
-				"styles": ["src/styles.scss"],
-				"scripts": [],
-				"assets": [ "src/favicon.ico", "src/assets", "src/manifest.json"]
-			  }
-			},  		  
+          },		  
           "configurations": {
             "production": {
               "budgets": [
@@ -115,6 +101,24 @@
           },
           "defaultConfiguration": "development"
         },
+          "test": {
+            "builder": "@angular-devkit/build-angular:karma",
+            "options": {
+              "codeCoverage": true,
+              "main": "src/test.ts",
+              "polyfills": "src/polyfills.ts",
+              "tsConfig": "tsconfig.spec.json",
+              "karmaConfig": "karma.conf.js",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
+              "styles": [
+                "src/styles.css"
+              ],
+              "scripts": []
+            }
+		},
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
