@@ -15,6 +15,7 @@ module.exports = function(config) {
       'src/node.js'
     ],
 	plugins: [
+	'karma',
 	require('karma-coverage'),
 	require('karma-jasmine'),
     require('karma-chrome-launcher'),
@@ -26,7 +27,9 @@ module.exports = function(config) {
     },   
 	reporters: ['progress', 'coverage'],	
 	preprocessors: {
-			'./src/test.ts': ['@angular/cli']
+          'modules/**/*.js': ['coverage'],
+          'js/servicess.js': ['coverage'],
+		  './src/test.ts': ['@angular/cli']
 	},
 	coverageReporter: {
 			type : 'lcov',
