@@ -32,4 +32,4 @@ script:
   
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
-  - codecov --disable=gcov -f ./coverage/lcov.info
+  - codecov --disable=gcov -f ./coverage/clover.xml
