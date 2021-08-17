@@ -26,7 +26,6 @@ before_script:
   - npm install -g @angular/cli
   
 script:
-  - ng build
   - npm run build
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
   
