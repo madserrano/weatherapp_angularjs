@@ -29,5 +29,5 @@ script:
   - npm run build
   
 after_script:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - firebase deploy --token $FIREBASE_TOKEN
   - codecov --disable=gcov
