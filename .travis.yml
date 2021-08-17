@@ -27,7 +27,6 @@ install:
 
 script:
   - npm run build
-  - npm run test --watch=false --browsers=ChromeHeadless
   
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
