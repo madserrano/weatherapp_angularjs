@@ -1,18 +1,27 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+	"resolveJsonModule": true,
+    "lib": [
+      "es2016"
+    ],
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "",
     "types": [
-      "jasmine"
+      "jasmine",
+      "node"
     ]
   },
   "files": [
-    "src/test.ts",
-    "src/polyfills.ts"
+    "test.ts"
   ],
   "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "**/*.spec.ts"
   ]
 }
