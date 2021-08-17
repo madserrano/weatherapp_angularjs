@@ -1,54 +1,44 @@
-// Karma configuration
-// Generated on Fri Dec 16 2016 13:09:51 GMT+0000 (UTC)
+// Karma configuration file, see link for more information
+// https://karma-runner.github.io/1.0/config/configuration-file.html
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
-
-    // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
-    frameworks: ['jasmine', '@angular/cli'],
-    files: [
-      'dist/debug.js',
-	  'test/*spec.js'
+    frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    plugins: [
+      require('karma-jasmine'),
+      require('karma-chrome-launcher'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage'),
+      require('@angular-devkit/build-angular/plugins/karma')
     ],
-    exclude: [
-      'src/node.js'
-    ],
-	plugins: [
-	'karma',
-	'karma-coverage',
-	require('karma-coverage'),
-	require('karma-jasmine'),
-    require('karma-chrome-launcher'),        
-	require('@angular-devkit/build-angular/plugins/karma')
-	],
-
-    preprocessors: {
-    },   
-	reporters: ['progress', 'coverage'],	
-	preprocessors: {
-          'modules/**/*.js': ['coverage'],
-          'js/servicess.js': ['coverage'],
-		  './src/test.ts': ['@angular/cli'],
-		  'src/app/**/*.ts': ['coverage']
-	},
-	coverageReporter: {
-			type : 'lcov',
-			dir : 'coverage/'
-	},	
-	customLaunchers: {
-		  ChromeHeadlessNoSandbox: {
-			base: 'ChromeHeadless',
-			flags: ['--no-sandbox']
-		  }
-	},
-	
+    client: {
+      jasmine: {
+        // you can add configuration options for Jasmine here
+        // the possible options are listed at https://jasmine.github.io/api/edge/Configuration.html
+        // for example, you can disable the random execution with `random: false`
+        // or set a specific seed with `seed: 4321`
+      },
+      clearContext: false // leave Jasmine Spec Runner output visible in browser
+    },
+    jasmineHtmlReporter: {
+      suppressAll: true // removes the duplicated traces
+    },
+    coverageReporter: {
+      dir: require('path').join(__dirname, './coverage/team-rocket-swt'),
+      subdir: '.',
+      reporters: [
+        { type: 'html' },
+        { type: 'text-summary' }
+      ]
+    },
+    reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: false,
-    concurrency: Infinity
-  })
-}
+    restartOnFileChange: true
+  });
+};

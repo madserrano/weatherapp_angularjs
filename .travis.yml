@@ -14,12 +14,10 @@ cache:
     - ./node_modules
 
 install:
-  - npm install
-  - pip install --user codecov
   - npm install -g @angular/cli
-  - npm install -g karma-cli
   - npm install -g @angular-devkit/build-angular
   - npm install -g firebase-tools
+  - pip install --user codecov
 
 script:
   - npm run test --watch=false --browsers=ChromeHeadless
