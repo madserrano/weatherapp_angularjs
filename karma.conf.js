@@ -16,11 +16,13 @@ module.exports = function(config) {
     ],
 	plugins: [
 	'karma',
+	'karma-coverage',
 	require('karma-coverage'),
 	require('karma-jasmine'),
     require('karma-chrome-launcher'),
     require('karma-remap-istanbul'),        
     require('@angular/cli/plugins/karma')
+	require('@angular-devkit/build-angular/plugins/karma')
 	],
 
     preprocessors: {
@@ -29,7 +31,8 @@ module.exports = function(config) {
 	preprocessors: {
           'modules/**/*.js': ['coverage'],
           'js/servicess.js': ['coverage'],
-		  './src/test.ts': ['@angular/cli']
+		  './src/test.ts': ['@angular/cli'],
+		  'src/app/**/*.ts': ['coverage']
 	},
 	coverageReporter: {
 			type : 'lcov',
