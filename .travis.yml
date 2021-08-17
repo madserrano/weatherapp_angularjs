@@ -20,7 +20,7 @@ install:
   - pip install --user codecov
 
 script:
-  - npm run test --watch=false --browsers=ChromeHeadless
+  - npm run test --codeCoverage=true --watch=false --browsers=ChromeHeadlessNoSandbox
   - npm run build
   
 after_success:
