@@ -19,8 +19,7 @@ module.exports = function(config) {
 	'karma-coverage',
 	require('karma-coverage'),
 	require('karma-jasmine'),
-    require('karma-chrome-launcher'),
-    require('karma-remap-istanbul'),        
+    require('karma-chrome-launcher'),        
 	require('@angular-devkit/build-angular/plugins/karma')
 	],
 
