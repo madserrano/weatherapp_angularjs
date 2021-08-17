@@ -21,7 +21,6 @@ module.exports = function(config) {
 	require('karma-jasmine'),
     require('karma-chrome-launcher'),
     require('karma-remap-istanbul'),        
-    require('@angular/cli/plugins/karma')
 	require('@angular-devkit/build-angular/plugins/karma')
 	],
 
