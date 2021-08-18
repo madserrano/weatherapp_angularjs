@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
     </section>
     <section class="section">
 	  <div class="container">
-	    We are Team Rocket and our mission is to build this simple web app using AngularJS, in which none of us haven't worked on yet before.
+	    We are Team Rocket and our mission is to build this simple web app using AngularJS, integrated with Open Weather map API.
 	  </div>
 	</section>
   `,
