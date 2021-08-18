@@ -18,7 +18,7 @@
             <a class="navbar-item" routerLink="/about">About Us</a>
           </div>
           <div class="navbar-end">
-            <a class="navbar-item" >{{ dateObj | date:'medium' }}</a>
+            <a class="navbar-item" >{{ dateObj | date:'YYYY-MM-dd HH:mm:ss' }}</a>
           </div>
         </div>
     </div>
