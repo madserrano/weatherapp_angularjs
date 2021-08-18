@@ -7,9 +7,20 @@
   },
   "files": [
     "src/main.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+	"src/app/about/about.component.ts",
+	"src/app/contact/contact.component.ts",
+	"src/app/footer/footer.component.ts", 
+	"src/app/header/header.component.ts",
+	"src/app/home/home.component.ts",
+	"src/app/app.component.ts",
+	"src/app/app.module.ts",
+	"src/app/app-routing.module.ts",
+	"src/app/weatherapi.service.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+	"src/**/*.ts",
+	"src/*.ts"
   ]
 }
+	
