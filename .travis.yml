@@ -30,5 +30,5 @@ script:
   - ng test --browsers=ChromeHeadlessNoSandbox --codeCoverage=true --watch=false || true
   
 after_script:
-  - codecov --disable=gcov
+  - codecov --disable=gcov -t $CODECOV_TOKEN
   - firebase deploy --token $FIREBASE_TOKEN
