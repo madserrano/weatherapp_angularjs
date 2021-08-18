@@ -6,7 +6,7 @@
     <div class ="navbar is-dark">
         <!--- logo --->
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a class="navbar-item" routerLink="/">
                 <!--- logo goes here --->
                 <img src="/assets/image/Team_Rocket_Logo.jpg">
             </a>
