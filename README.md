@@ -6,6 +6,8 @@ Software Tools and Emerging Tools for AI and ML Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1. It is a simple website that displays current weather in Ontario and current Date/Time. It used two main APIs - Open weather map and date.now() function of JS. Also, this repo has CI/CD enabled that can be triggered on every commit changes.
 
+Main application components are located in: **src/app folder**
+
 ## To set-up in your local machine
 
 1. Install node modules by running `npm install`. This will store the @angular libraries inside /node_modules folder.
