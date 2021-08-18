@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/madserrano/SoftwareTools.svg?branch=master)](https://travis-ci.com/madserrano/SoftwareTools)
+
 # **Team Rocket Weather App**
 Software Tools and Emerging Tools for AI and ML Project
 
