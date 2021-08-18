@@ -2,7 +2,7 @@
 [![codecov](https://codecov.io/gh/madserrano/SoftwareTools/branch/master/graph/badge.svg?token=KGNQYPQ9WC)](https://codecov.io/gh/madserrano/SoftwareTools)
 
 # **Team Rocket Weather App**
-Software Tools and Emerging Tools for AI and ML Project
+Software Tools and Emerging Tools for AI and ML Project..
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1. It is a simple website that displays current weather in Ontario and current Date/Time. It used two main APIs - Open weather map and date.now() function of JS. Also, this repo has CI/CD enabled that can be triggered on every commit changes.
 
