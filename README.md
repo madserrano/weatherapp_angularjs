@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/madserrano/SoftwareTools.svg?branch=master)](https://travis-ci.com/madserrano/SoftwareTools)
+[![Build Status](https://app.travis-ci.com/madserrano/SoftwareTools.svg?token=sggsowb8s8LtPpgzLzxi&branch=master)](https://app.travis-ci.com/madserrano/SoftwareTools)
 [![codecov](https://codecov.io/gh/madserrano/SoftwareTools/branch/master/graph/badge.svg?token=KGNQYPQ9WC)](https://codecov.io/gh/madserrano/SoftwareTools)
 
 # **Team Rocket Weather App**
